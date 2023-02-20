@@ -1,0 +1,25 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Robot In Motion (debug)",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}\\src\\main.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+            
+        },
+        {
+            "name": "CLI file (debug)",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}\\MoveRobotInGrid.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}
