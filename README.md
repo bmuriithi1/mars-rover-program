@@ -62,8 +62,7 @@ Final state with command `'(2, 3, E) LFRF'`: <br>
 
 Output string: `'(3, 4, E)'`
 
-If command had instead been `'(2, 3, E) LFRFF'`, output would be `'(3, 4, E) LOST'`
-- Command shows last known position of the robot and string 'LOST' indicates the robot has gone off the grid.
+If the robot goes out of the predefined grid, the output string contains the last known position and orientation of the robot, with the string 'LOST' appended to the end of the output. For example, if the input command was `'(2, 3, E) LFRFF'`, the output string would be `'(3, 4, E) LOST'`.
 ___________
 
 ## Executing the program
@@ -72,19 +71,18 @@ To execute the program, clone the repository to a folder on your local machine. 
 
 ### Run executable program in Windows
 
-1. From the repository's root directory, navigate to `executable\dist\MoveRobotInGrid\`
+1. From the repository's root directory, navigate to `executable\dist\`
 2. Double click executable file `MoveRobotInGrid.exe` to open the Windows Command Prompt
-3. Follow instructions in the display / on this README file to execute the program.
+3. Follow instructions in the display or on this README file to provide inputs required to execute program successfully.
 
 ### Run executable program via Bash/PowerShell CLI
 
-1. From the repository's root directory, navigate to `.\executable\dist\MoveRobotInGrid` via the command line
-2. Type `.\MoveRobotInGrid` into the CLI to execute the script
-3. Follow instructions in the display / on this README file to execute the program.
+1. From the repository's root directory, type `.\executable\dist\MoveRobotInGrid.exe` in the command line to execute the program.
+2. Follow instructions in the display or on this README file to provide inputs required to execute program successfully.
 
-> CLI commands above based on using PowerShell. Use forward slashes for Lunix/Bash terminals.
+> CLI commands above based on using PowerShell. Use forward slashes for Linux/Bash terminals.
 
-## TO DO : Future work
+## TO DO: Future work
 - Convert objects to strongly-typed classes for production-level code
     - Class for board, with:
         - properties length, width, x-limit, y-limit
@@ -92,12 +90,15 @@ To execute the program, clone the repository to a folder on your local machine. 
     - Class for robot with:
         - properties defining direction, orientation and possible next moves based on directions
         - instance methods for moving/rotating robot
-- Add unit tests to functions (and expand them to cater for different inputs) to src/tests
-    - eg. Regex functions are pretty rigid at the moment, they only accept the exact string format specified in instructions
-    - use pytest to test functions locally or whilst building program.
+- Add unit tests to src/tests for thev various functions 
+    - use pytest to test functions locally or whilst building program.    
+- Improve regex used to parse input:
+    - Set realistic limits on grid sizes/max no of commands to prevent program crashing or taking very long to execute
+    - Provide help to user by breaking down regex command and detecting what might be missing.
 - Improve error handling
     - Use python logging module to print warnings/errors (can set severity using inbuilt lib funcs)
-    - Use `try except` statements to gracefully deal with errors particularly expected ones.
+    - Use `try except` statements to gracefully deal with errors, particularly expected ones.
+    - For input errors, prompt user to input (up to a limited no of times before exiting program) if input is incorrect first time.
 - Add docstrings to all functions describing function, expected inputs and expected outputs
     - See example in `parse_board_details` function
 - Clean up comments in code (and action any comments relating to improving functionality)
