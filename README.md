@@ -4,6 +4,8 @@ This script takes in instructions of a grid size, initial position of a robot on
 
 It outputs the final position of the robot after all commands are executed, or the final known position if the robot has gone off-grid and an indication that the robot has moved off the grid. 
 
+The script containing the logic for the program is  `src/main.py` 
+
 ## Inputs and Outputs
 
 Input:
