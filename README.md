@@ -80,7 +80,7 @@ To execute the program, clone the repository to a folder on your local machine. 
 1. From the repository's root directory, type `.\executable\dist\MoveRobotInGrid.exe` in the command line to execute the program.
 2. Follow instructions in the display or on this README file to provide inputs required to execute program successfully.
 
-> CLI commands above based on using PowerShell. Use forward slashes for Linux/Bash terminals.
+> CLI command above is based on using PowerShell. Use forward slashes instead if running the program from a Linux/Bash terminal.
 
 ## TO DO: Future work
 - Convert objects to strongly-typed classes for production-level code
