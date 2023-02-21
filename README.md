@@ -92,7 +92,9 @@ To execute the program, clone the repository to a folder on your local machine. 
     - Class for robot with:
         - properties defining direction, orientation and possible next moves based on directions
         - instance methods for moving/rotating robot
-- Add unit tests to src/tests for thev various functions 
+- Create function `execute_commands()` to execute commands given initial grid and robot state
+    - Do this instead of performing 'for' loop in main script. Can then add a test for this in isolation.
+- Add unit tests to src/tests for the various functions 
     - use pytest to test functions locally or whilst building program.    
 - Improve regex used to parse input:
     - Set realistic limits on grid sizes/max no of commands to prevent program crashing or taking very long to execute
