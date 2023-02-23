@@ -1,3 +1,5 @@
+**UPDATE 23/02/22**: branch v2-fixed-bugs-and-added-tests contains bug fixes and added test coverage for bugs uncovered. Use this instead.
+
 # Robot Motion Script
 
 This script takes in instructions of a grid size, initial position of a robot on the grid and commands to move the robot within the grid. 
@@ -85,6 +87,10 @@ To execute the program, clone the repository to a folder on your local machine. 
 > CLI command above is based on using PowerShell. Use forward slashes instead if running the program from a Linux/Bash terminal.
 
 ## TO DO: Future work
+- Clarify grid spec:
+    - Grid size and grid limits - test 1 currently not satisfied according to spec.
+    - Product - clarify requirements and tighten design spec
+        - Things like grid size expectations, command expectations, business needs etc.
 - Convert objects to strongly-typed classes for production-level code
     - Class for board, with:
         - properties length, width, x-limit, y-limit
