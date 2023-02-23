@@ -1,3 +1,5 @@
+**UPDATE 23/02/22**: branch v2-fixed-bugs-and-added-tests contains bug fixes and added test coverage for bugs uncovered. Use executable from this branch instead to run the program (see instructions on executing program below).
+
 # Robot Motion Script
 
 This script takes in instructions of a grid size, initial position of a robot on the grid and commands to move the robot within the grid. 
