@@ -1,4 +1,4 @@
-**UPDATE 23/02/22**: branch v2-fixed-bugs-and-added-tests contains bug fixes and added test coverage for bugs uncovered. Use this instead.
+**UPDATE 23/02/22**: branch v2-fixed-bugs-and-added-tests contains bug fixes and added test coverage for bugs uncovered. Use executable from this branch instead to run the program (see instructions on executing program below).
 
 # Robot Motion Script
 
