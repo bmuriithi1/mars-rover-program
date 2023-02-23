@@ -77,11 +77,11 @@ def parse_robot_instructions(instructions_input_str: str) -> dict[str, any]:
 def create_robot_grid_info(col_no: int, row_no: int) -> dict[str, any]:
     
     # TODO: Review data type. Use nested dictionary instead for reduced memory
-    grid = [[0] * col_no for row in range(row_no)]
+    grid = [[0] * (col_no + 1) for row in range(row_no + 1)]
 
     # TODO: Convert to strongly-typed class for prod
     # TODO: Clarify requirements - grid limits and instructions seem incompatible?
-    grid_dict = {"grid": grid, "x_lim": col_no - 1, "y_lim": row_no -1 }
+    grid_dict = {"grid": grid, "x_lim": col_no, "y_lim": row_no }
 
     return grid_dict
 

@@ -9,7 +9,7 @@ def test_west_limit_failure():
     assert check_robot_position(x_pos, y_pos, x_lim, y_lim, motion_count) == False
 
 def test_west_limit_ok():
-    x_pos=1
+    x_pos=0
     y_pos=0
     x_lim=4
     y_lim=8
@@ -58,8 +58,8 @@ def test_north_limit_failure():
 
 def test_north_limit_ok():
     x_pos=1
-    y_pos=2
+    y_pos=4
     x_lim=4
-    y_lim=8
+    y_lim=4
     motion_count=5
     assert check_robot_position(x_pos, y_pos, x_lim, y_lim, motion_count) == True
