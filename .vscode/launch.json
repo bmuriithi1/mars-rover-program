@@ -14,7 +14,7 @@
             
         },
         {
-            "name": "CLI file (debug)",
+            "name": "MoveRobotInGrid (debug)",
             "type": "python",
             "request": "launch",
             "program": "${workspaceFolder}\\MoveRobotInGrid.py",

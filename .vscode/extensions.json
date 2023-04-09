@@ -1,0 +1,21 @@
+{
+    "recommendations": [
+        "ms-vscode-remote.remote-containers",
+        "ms-python.python",
+        "eamodio.gitlens",
+        "waderyan.gitblame",
+        "donjayamanne.githistory",
+        "Gruntfuggly.todo-tree",
+        "huizhou.githd",
+        "SonarSource.sonarlint-vscode",
+        "christian-kohler.npm-intellisense",
+        "christian-kohler.path-intellisense",
+        "esbenp.prettier-vscode",
+        "streetsidesoftware.code-spell-checker",
+        "aaron-bond.better-comments",
+        "mechatroner.rainbow-csv",
+        "naumovs.color-highlight",
+        "vincaslt.highlight-matching-tag",
+        "formulahendry.auto-close-tag"
+    ]
+}
